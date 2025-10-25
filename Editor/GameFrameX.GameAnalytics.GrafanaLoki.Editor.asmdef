@@ -1,0 +1,22 @@
+{
+    "name": "GameFrameX.GameAnalytics.GrafanaLoki.Editor",
+    "rootNamespace": "GameFrameX.GameAnalytics.GrafanaLoki.Editor",
+    "references": [
+        "GameFrameX.GameAnalytics.GrafanaLoki.Runtime",
+        "GameFrameX.GameAnalytics.Runtime",
+        "GameFrameX.GameAnalytics.Editor",
+        "GameFrameX.Runtime",
+        "GameFrameX.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

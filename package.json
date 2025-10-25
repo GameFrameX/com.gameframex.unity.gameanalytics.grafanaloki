@@ -1,0 +1,27 @@
+{
+  "name": "com.gameframex.unity.gameanalytics.grafanaloki",
+  "displayName": "Game Frame X Game Analytics Grafana Loki",
+  "category": "Game Framework X",
+  "description": "Game Frame X Game Analytics Grafana Loki Component",
+  "version": "1.0.0",
+  "unity": "2019.4",
+  "keywords": [
+    "Game Framework X",
+    "Analytics",
+    "Grafana",
+    "Loki"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gameframex/com.gameframex.unity.gameanalytics.grafanaloki.git"
+  },
+  "author": {
+    "name": "Blank",
+    "email": "alianblank@outlook.com",
+    "url": "https://gameframex.doc.alianblank.com"
+  },
+  "dependencies": {
+    "com.gameframex.unity": "1.1.1",
+    "com.gameframex.unity.gameanalytics": "1.0.0"
+  }
+}
