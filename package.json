@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "com.gameframex.unity": "1.1.1",
-    "com.gameframex.unity.gameanalytics": "1.0.0"
+    "com.gameframex.unity.gameanalytics": "1.0.0",
+    "com.gilzoide.sqlite-net": "1.2.4"
   }
 }
