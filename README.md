@@ -12,6 +12,33 @@
 
 ## 安装
 
+### 依赖
+
+本包依赖 `com.gilzoide.sqlite-net`。请使用 openupm-cli 安装:
+
+```
+openupm add com.gilzoide.sqlite-net
+```
+
+或者, 在 `Packages/manifest.json` 中添加以下 scope 和 dependency:
+
+```json
+{
+  "scopedRegistries": [
+    {
+      "name": "OpenUPM",
+      "url": "https://package.openupm.com",
+      "scopes": [
+        "com.gilzoide"
+      ]
+    }
+  ],
+  "dependencies": {
+    "com.gilzoide.sqlite-net": "1.2.4"
+  }
+}
+```
+
 # 使用方式(任选其一)
 
 1. 直接在 `manifest.json` 的文件中的 `dependencies` 节点下添加以下内容
