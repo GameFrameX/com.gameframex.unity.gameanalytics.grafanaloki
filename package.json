@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/gameframex/com.gameframex.unity.gameanalytics.grafanaloki.git"
+    "url": "git+https://github.com/gameframex/com.gameframex.unity.gameanalytics.grafanaloki.git"
   },
   "author": {
     "name": "Blank",
