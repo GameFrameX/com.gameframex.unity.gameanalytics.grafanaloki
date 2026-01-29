@@ -27,7 +27,8 @@ namespace GameFrameX.GameAnalytics.GrafanaLoki.Runtime
         public LokiHttpClient(string url, Dictionary<string, string> headers = null, int timeoutSeconds = 10, int maxRetries = 3)
         {
             _lokiUrl = url;
-            _headers = headers ?? new Dictionary<string, string>();
+            // 复制 headers 以避免修改外部引用
+            _headers = headers != null ? new Dictionary<string, string>(headers) : new Dictionary<string, string>();
             _timeoutSeconds = timeoutSeconds;
             _maxRetries = maxRetries;
 
