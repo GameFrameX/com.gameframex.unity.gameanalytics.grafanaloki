@@ -17,7 +17,6 @@ namespace GameFrameX.GameAnalytics.GrafanaLoki.Runtime
         private ILogStorage _logStorage;
         private LokiHttpClient _httpClient;
         private GrafanaLokiAnalyticsSetting _setting;
-        private readonly Dictionary<string, object> _publicProperties = new Dictionary<string, object>();
         private Dictionary<string, string> _lokiLabels = new Dictionary<string, string>();
         private readonly Dictionary<string, long> _timerStartTimes = new Dictionary<string, long>();
         private readonly Dictionary<string, long> _timerPausedDurations = new Dictionary<string, long>();
@@ -128,30 +127,6 @@ namespace GameFrameX.GameAnalytics.GrafanaLoki.Runtime
             SetPublicProperties("player_id", playerId);
         }
 
-        /// <summary>
-        /// 设置公共属性
-        /// </summary>
-        /// <param name="key">键</param>
-        /// <param name="value">值</param>
-        public override void SetPublicProperties(string key, object value)
-        {
-            if (string.IsNullOrEmpty(key))
-            {
-                return;
-            }
-
-            _publicProperties[key] = value;
-        }
-
-        /// <summary>
-        /// 清除公共属性
-        /// </summary>
-        public override void ClearPublicProperties()
-        {
-            _publicProperties.Clear();
-            AddDeviceInfoToPublicProperties();
-        }
-
         private void UpdateLabels()
         {
             // 设备基本信息
@@ -166,28 +141,6 @@ namespace GameFrameX.GameAnalytics.GrafanaLoki.Runtime
             _lokiLabels["app_version"] = Application.version;
             _lokiLabels["unity_version"] = Application.unityVersion;
             _lokiLabels["platform"] = Application.platform.ToString();
-
-            // 设备基本信息
-            _publicProperties["device_id"] = SystemInfo.deviceUniqueIdentifier;
-            _publicProperties["device_model"] = SystemInfo.deviceModel;
-            _publicProperties["device_type"] = SystemInfo.deviceType.ToString();
-
-            // 操作系统信息
-            _publicProperties["os"] = SystemInfo.operatingSystem;
-
-            // 应用程序信息
-            _publicProperties["app_version"] = Application.version;
-            _publicProperties["unity_version"] = Application.unityVersion;
-            _publicProperties["platform"] = Application.platform.ToString();
-        }
-
-        /// <summary>
-        /// 获取公共属性
-        /// </summary>
-        /// <returns>公共属性字典</returns>
-        public override Dictionary<string, object> GetPublicProperties()
-        {
-            return new Dictionary<string, object>(_publicProperties);
         }
 
         /// <summary>
@@ -306,7 +259,7 @@ namespace GameFrameX.GameAnalytics.GrafanaLoki.Runtime
             try
             {
                 // 创建日志条目
-                GameAnalyticsEntry gameAnalyticsEntry = new GameAnalyticsEntry(eventName, customFields, _publicProperties);
+                GameAnalyticsEntry gameAnalyticsEntry = new GameAnalyticsEntry(eventName, customFields, m_PublicProperties);
                 _logStorage.SaveLog(gameAnalyticsEntry);
             }
             catch (Exception ex)
@@ -330,44 +283,6 @@ namespace GameFrameX.GameAnalytics.GrafanaLoki.Runtime
 
             fields["value"] = eventValue;
             Event(eventName, fields);
-        }
-
-        /// <summary>
-        /// 添加设备信息到公共属性
-        /// </summary>
-        private void AddDeviceInfoToPublicProperties()
-        {
-            // 系统硬件信息
-            _publicProperties["processor_type"] = SystemInfo.processorType;
-            _publicProperties["processor_count"] = SystemInfo.processorCount;
-            _publicProperties["processor_frequency"] = SystemInfo.processorFrequency;
-            _publicProperties["system_memory_size"] = SystemInfo.systemMemorySize;
-
-            // 图形相关信息
-            _publicProperties["graphics_device_name"] = SystemInfo.graphicsDeviceName;
-            _publicProperties["graphics_device_type"] = SystemInfo.graphicsDeviceType.ToString();
-            _publicProperties["graphics_memory_size"] = SystemInfo.graphicsMemorySize;
-            _publicProperties["graphics_device_version"] = SystemInfo.graphicsDeviceVersion;
-            _publicProperties["graphics_shader_level"] = SystemInfo.graphicsShaderLevel;
-
-            // 屏幕信息
-            _publicProperties["screen_width"] = Screen.width;
-            _publicProperties["screen_height"] = Screen.height;
-            _publicProperties["screen_dpi"] = Screen.dpi;
-            _publicProperties["screen_refresh_rate"] = Screen.currentResolution.refreshRate;
-            // 添加本地化语言信息
-            _publicProperties["system_language"] = Application.systemLanguage.ToString();
-            _publicProperties["current_culture"] = System.Globalization.CultureInfo.CurrentCulture.Name;
-
-            // 网络类型
-            string networkType = Application.internetReachability switch
-            {
-                NetworkReachability.NotReachable                   => "No Network",
-                NetworkReachability.ReachableViaCarrierDataNetwork => "Mobile Data",
-                NetworkReachability.ReachableViaLocalAreaNetwork   => "WiFi",
-                _                                                  => "Unknown"
-            };
-            _publicProperties["network_type"] = networkType;
         }
 
         /// <summary>
