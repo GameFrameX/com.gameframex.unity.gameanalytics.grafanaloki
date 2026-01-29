@@ -323,13 +323,13 @@ namespace GameFrameX.GameAnalytics.GrafanaLoki.Runtime
         /// <param name="customFields">自定义字段</param>
         public override void Event(string eventName, float eventValue, Dictionary<string, object> customFields)
         {
-            if (customFields == null)
-            {
-                customFields = new Dictionary<string, object>();
-            }
+            // 创建副本或新字典，避免修改原始引用
+            var fields = customFields != null
+                ? new Dictionary<string, object>(customFields)
+                : new Dictionary<string, object>();
 
-            customFields["value"] = eventValue;
-            Event(eventName, customFields);
+            fields["value"] = eventValue;
+            Event(eventName, fields);
         }
 
         /// <summary>
