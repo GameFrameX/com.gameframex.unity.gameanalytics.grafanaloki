@@ -58,7 +58,7 @@ namespace GameFrameX.GameAnalytics.GrafanaLoki.Runtime
                 eventData = new Dictionary<string, object>();
             }
 
-            var result = publicProperties;
+            var result = new Dictionary<string, object>(publicProperties);
 
             foreach (var kvp in eventData)
             {
