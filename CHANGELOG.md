@@ -1,3 +1,12 @@
+## [1.0.1](https://github.com/gameframex/com.gameframex.unity.gameanalytics.grafanaloki/compare/1.0.0...1.0.1) (2026-01-29)
+
+
+### Bug Fixes
+
+* **Network:** 修复LokiHttpClient构造函数中headers的引用问题 ([d4ec500](https://github.com/gameframex/com.gameframex.unity.gameanalytics.grafanaloki/commit/d4ec5006cb3eb7f30a2091da3ab7b60a8899373b))
+* 修复事件数据与公共属性字典引用共享的问题 ([529e5db](https://github.com/gameframex/com.gameframex.unity.gameanalytics.grafanaloki/commit/529e5db03b7dbf4523e18e928c31baa6072ddcbf))
+* 修复自定义字段字典被意外修改的问题 ([320dc52](https://github.com/gameframex/com.gameframex.unity.gameanalytics.grafanaloki/commit/320dc5262003f400f4d5c79b8112f64b75981776))
+
 # 1.0.0 (2025-12-24)
 
 
