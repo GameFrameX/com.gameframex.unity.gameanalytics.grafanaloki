@@ -1,26 +1,44 @@
-# Game Frame X Game Analytics Grafana Loki
+<div align="center">
+  <img src="https://download.alianblank.com/gameframex/gameframex_logo_320.png" alt="GameFrameX Logo" width="160" />
 
-这个包提供了基于Grafana Loki的日志打点系统，实现了GameFrameX.GameAnalytics接口。
+  # GameFrameX GameAnalytics Grafana Loki
 
-## 特性
+  [![Version](https://img.shields.io/github/v/release/GameFrameX/com.gameframex.unity.gameanalytics.grafanaloki)](https://github.com/GameFrameX/com.gameframex.unity.gameanalytics.grafanaloki/releases)
+  [![License](https://img.shields.io/badge/license-MIT-orange.svg)](LICENSE.md)
+  [![Documentation](https://img.shields.io/badge/docs-gameframex-blue.svg)](https://gameframex.doc.alianblank.com)
 
-- 完全兼容GameFrameX.GameAnalytics接口
-- 支持本地日志存储和批量发送
-- 定时发送机制
-- 网络状态感知和失败重试
-- 可配置的Loki服务器地址和批处理参数
+  All-in-One Solution for Indie Game Development · Empowering Indie Developers' Dreams
 
-## 安装
+  [Documentation](https://gameframex.doc.alianblank.com) | [Quick Start](#quick-start)
 
-### 依赖
+  **English** | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
+</div>
 
-本包依赖 `com.gilzoide.sqlite-net`。请使用 openupm-cli 安装:
+---
+
+## Project Overview
+
+This package provides a Grafana Loki-based log analytics system that implements the GameFrameX.GameAnalytics interface. It enables game developers to send analytics events to Grafana Loki for centralized log management and visualization.
+
+## Features
+
+- Fully compatible with GameFrameX.GameAnalytics interface
+- Local log storage and batch sending
+- Timed sending mechanism
+- Network status awareness and failure retry
+- Configurable Loki server URL and batch processing parameters
+
+## Installation
+
+### Dependencies
+
+This package depends on `com.gilzoide.sqlite-net`. Install it via openupm-cli:
 
 ```
 openupm add com.gilzoide.sqlite-net
 ```
 
-或者, 在 `Packages/manifest.json` 中添加以下 scope 和 dependency:
+Or add the following scope and dependency in `Packages/manifest.json`:
 
 ```json
 {
@@ -39,27 +57,43 @@ openupm add com.gilzoide.sqlite-net
 }
 ```
 
-# 使用方式(任选其一)
+### Via Git URL (Recommended)
 
-1. 直接在 `manifest.json` 的文件中的 `dependencies` 节点下添加以下内容
-   ```json
-      {"com.gameframex.unity.gameanalytics.grafanaloki": "https://github.com/gameframex/com.gameframex.unity.gameanalytics.grafanaloki.git"}
-    ```
-2. 在Unity 的`Packages Manager` 中使用`Git URL` 的方式添加库,地址为：https://github.com/gameframex/com.gameframex.unity.gameanalytics.grafanaloki.git
+1. Open Package Manager in Unity Editor
+2. Click the "+" button and select "Add package from git URL"
+3. Enter the following URL:
+   ```
+   https://github.com/GameFrameX/com.gameframex.unity.gameanalytics.grafanaloki.git
+   ```
 
-3. 直接下载仓库放置到Unity 项目的`Packages` 目录下。会自动加载识别
+### Via manifest.json
 
-## 使用方法
+Add the following to your project's `Packages/manifest.json`:
 
-1. 在Unity项目中引入包
-2. 在GameAnalyticsComponent中添加GrafanaLokiAnalyticsManager配置
-3. 设置Loki服务器URL和其他配置参数
-4. 使用现有的AnalyticsManager.SendAnalyticsEvent方法发送事件
+```json
+{
+  "dependencies": {
+    "com.gameframex.unity.gameanalytics.grafanaloki": "https://github.com/GameFrameX/com.gameframex.unity.gameanalytics.grafanaloki.git"
+  }
+}
+```
 
-### 示例配置
+### Manual Installation
 
-```csharp
-// 在Resources/GameAnalytics/GameAnalyticsSettings.asset中配置
+1. Download the latest release package
+2. Extract it to your project's `Packages` directory
+3. Unity will automatically recognize and load the package
+
+## Quick Start
+
+1. Import the package into your Unity project
+2. Add GrafanaLokiAnalyticsManager configuration to GameAnalyticsComponent
+3. Set the Loki server URL and other configuration parameters
+4. Use the existing AnalyticsManager.SendAnalyticsEvent method to send events
+
+### Example Configuration
+
+```json
 {
   "ComponentType": "GameFrameX.GameAnalytics.GrafanaLoki.Runtime.GrafanaLokiAnalyticsManager",
   "Setting": {
@@ -72,14 +106,18 @@ openupm add com.gilzoide.sqlite-net
 }
 ```
 
-## 配置参数
+## Configuration Parameters
 
-- `LokiUrl`: Grafana Loki服务器的URL
-- `BatchSendIntervalSeconds`: 批量发送日志的间隔时间（秒）
-- `MaxBatchSize`: 每批发送的最大日志数量
-- `StorageType`: 日志存储类型，可选值：`File`或`PlayerPrefs`
-- `LogFilePath`: 当StorageType为File时，日志文件的存储路径
+- `LokiUrl`: Grafana Loki server URL
+- `BatchSendIntervalSeconds`: Interval for batch sending logs (seconds)
+- `MaxBatchSize`: Maximum number of logs per batch
+- `StorageType`: Log storage type, options: `File` or `PlayerPrefs`
+- `LogFilePath`: Log file storage path when StorageType is File
 
-## 许可证
+## Changelog
 
-[MIT](LICENSE.md)
+See [CHANGELOG.md](CHANGELOG.md) for details.
+
+## License
+
+This project is licensed under the MIT License - see [LICENSE.md](LICENSE.md) for details.
