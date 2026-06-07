@@ -125,4 +125,4 @@ openupm add com.gilzoide.sqlite-net
 
 ## 開源協議
 
-本專案基於 MIT 協議開源，詳見 [LICENSE.md](LICENSE.md)。
+詳見 [LICENSE.md](LICENSE.md) 檔案。
