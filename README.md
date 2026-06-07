@@ -37,6 +37,36 @@ This package provides a Grafana Loki-based log analytics system that implements 
 
 ### Installation
 
+Choose one of the following methods:
+
+1. Edit your Unity project's `Packages/manifest.json` and add the `scopedRegistries` section:
+   ```json
+   {
+     "scopedRegistries": [
+       {
+         "name": "GameFrameX",
+         "url": "https://gameframex.upm.alianblank.uk",
+         "scopes": [
+           "com.gameframex"
+         ]
+       }
+     ],
+     "dependencies": {
+       "com.gameframex.unity.gameanalytics.grafanaloki": "1.0.1"
+     }
+   }
+   ```
+
+   `scopes` controls which packages are resolved through this registry. Only packages whose names start with `com.gameframex` will be fetched from it.
+
+2. Add to `manifest.json` dependencies:
+   ```json
+   {
+      "com.gameframex.unity.gameanalytics.grafanaloki": "https://github.com/gameframex/com.gameframex.unity.gameanalytics.grafanaloki.git"
+   }
+   ```
+3. Use **Package Manager** in Unity with **Git URL**: `https://github.com/gameframex/com.gameframex.unity.gameanalytics.grafanaloki.git`
+4. Clone the repository into your Unity project's `Packages` directory. It will be loaded automatically.
 ### Dependencies
 
 This package depends on `com.gilzoide.sqlite-net`. Install it via openupm-cli:
