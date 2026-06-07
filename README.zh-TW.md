@@ -33,7 +33,9 @@
 - 網路狀態感知和失敗重試
 - 可設定的 Loki 伺服器位址和批次處理參數
 
-## 安裝
+## 快速開始
+
+### 安裝
 
 ### 依賴
 
@@ -89,7 +91,6 @@ openupm add com.gilzoide.sqlite-net
 2. 解壓縮到專案的 `Packages` 目錄下
 3. Unity 會自動辨識並載入包
 
-## 快速開始
 
 1. 在 Unity 專案中引入包
 2. 在 GameAnalyticsComponent 中新增 GrafanaLokiAnalyticsManager 設定
@@ -123,6 +124,22 @@ openupm add com.gilzoide.sqlite-net
 
 詳見 [CHANGELOG.md](CHANGELOG.md)。
 
+
+## 依賴
+
+| 套件 | 說明 |
+|------|------|
+| `com.gameframex.unity` | 1.1.1 |
+| `com.gameframex.unity.gameanalytics` | 1.0.0 |
+| `com.gilzoide.sqlite-net` | 1.2.4 |
+
+## 文檔與資源
+
+- [官方文檔](https://gameframex.doc.alianblank.com)
+
+## 社區與支援
+
+- QQ群: 467608841 / 233840761
 ## 開源協議
 
 詳見 [LICENSE.md](LICENSE.md) 檔案。

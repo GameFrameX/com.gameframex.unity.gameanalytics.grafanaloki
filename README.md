@@ -33,7 +33,9 @@ This package provides a Grafana Loki-based log analytics system that implements 
 - Network status awareness and failure retry
 - Configurable Loki server URL and batch processing parameters
 
-## Installation
+## Quick Start
+
+### Installation
 
 ### Dependencies
 
@@ -89,7 +91,6 @@ Add the following to your project's `Packages/manifest.json`:
 2. Extract it to your project's `Packages` directory
 3. Unity will automatically recognize and load the package
 
-## Quick Start
 
 1. Import the package into your Unity project
 2. Add GrafanaLokiAnalyticsManager configuration to GameAnalyticsComponent
@@ -123,6 +124,22 @@ Add the following to your project's `Packages/manifest.json`:
 
 See [CHANGELOG.md](CHANGELOG.md) for details.
 
+
+## Dependencies
+
+| Package | Description |
+|---------|-------------|
+| `com.gameframex.unity` | 1.1.1 |
+| `com.gameframex.unity.gameanalytics` | 1.0.0 |
+| `com.gilzoide.sqlite-net` | 1.2.4 |
+
+## Documentation & Resources
+
+- [Documentation](https://gameframex.doc.alianblank.com)
+
+## Community & Support
+
+- QQ Group: 467608841 / 233840761
 ## License
 
 See [LICENSE.md](LICENSE.md) for license information.

@@ -33,7 +33,9 @@
 - 네트워크 상태 인식 및 실패 재시도
 - 구성 가능한 Loki 서버 URL 및 배치 처리 매개변수
 
-## 설치
+## 빠른 시작
+
+### 설치
 
 ### 종속성
 
@@ -89,7 +91,6 @@ openupm add com.gilzoide.sqlite-net
 2. 프로젝트의 `Packages` 디렉토리에 압축 해제
 3. Unity가 자동으로 패키지를 인식하고 로드합니다
 
-## 빠른 시작
 
 1. Unity 프로젝트에 패키지 가져오기
 2. GameAnalyticsComponent에 GrafanaLokiAnalyticsManager 구성 추가
@@ -123,6 +124,22 @@ openupm add com.gilzoide.sqlite-net
 
 자세한 내용은 [CHANGELOG.md](CHANGELOG.md)를 참조하세요.
 
+
+## 의존성
+
+| 패키지 | 설명 |
+|--------|------|
+| `com.gameframex.unity` | 1.1.1 |
+| `com.gameframex.unity.gameanalytics` | 1.0.0 |
+| `com.gilzoide.sqlite-net` | 1.2.4 |
+
+## 문서 및 자료
+
+- [문서](https://gameframex.doc.alianblank.com)
+
+## 커뮤니티 및 지원
+
+- QQ 그룹: 467608841 / 233840761
 ## 라이선스
 
 자세한 내용은 [LICENSE.md](LICENSE.md) 파일을 참조하세요.

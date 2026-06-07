@@ -33,7 +33,9 @@
 - ネットワークステータス検知とリトライ
 - 設定可能な Loki サーバー URL とバッチ処理パラメータ
 
-## インストール
+## クイックスタート
+
+### インストール
 
 ### 依存関係
 
@@ -89,7 +91,6 @@ openupm add com.gilzoide.sqlite-net
 2. プロジェクトの `Packages` ディレクトリに展開
 3. Unity が自動的にパッケージを認識して読み込みます
 
-## クイックスタート
 
 1. Unity プロジェクトにパッケージをインポート
 2. GameAnalyticsComponent に GrafanaLokiAnalyticsManager の設定を追加
@@ -123,6 +124,22 @@ openupm add com.gilzoide.sqlite-net
 
 詳細は [CHANGELOG.md](CHANGELOG.md) をご覧ください。
 
+
+## 依存関係
+
+| パッケージ | 説明 |
+|----------|------|
+| `com.gameframex.unity` | 1.1.1 |
+| `com.gameframex.unity.gameanalytics` | 1.0.0 |
+| `com.gilzoide.sqlite-net` | 1.2.4 |
+
+## ドキュメントとリソース
+
+- [ドキュメント](https://gameframex.doc.alianblank.com)
+
+## コミュニティとサポート
+
+- QQグループ: 467608841 / 233840761
 ## ライセンス
 
 詳しくは [LICENSE.md](LICENSE.md) をご参照ください。
