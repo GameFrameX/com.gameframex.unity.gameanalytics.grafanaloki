@@ -1,21 +1,24 @@
 <div align="center">
-  <img src="https://download.alianblank.com/gameframex/gameframex_logo_320.png" alt="GameFrameX Logo" width="160" />
 
-  # GameFrameX GameAnalytics Grafana Loki
+<img src="https://download.alianblank.com/gameframex/gameframex_logo_320.png" alt="Game Frame X Logo" width="160" />
 
-  [![Version](https://img.shields.io/github/v/release/GameFrameX/com.gameframex.unity.gameanalytics.grafanaloki)](https://github.com/GameFrameX/com.gameframex.unity.gameanalytics.grafanaloki/releases)
-  [![License](https://img.shields.io/badge/license-MIT-orange.svg)](LICENSE.md)
-  [![Documentation](https://img.shields.io/badge/docs-gameframex-blue.svg)](https://gameframex.doc.alianblank.com)
+# GameFrameX GameAnalytics Grafana Loki
 
-  独立游戏前后端一体化解决方案 · 独立游戏开发者的圆梦大使
+[![License](https://img.shields.io/github/license/GameFrameX/com.gameframex.unity.gameanalytics.grafanaloki)](https://github.com/GameFrameX/com.gameframex.unity.gameanalytics.grafanaloki/blob/main/LICENSE.md)
+[![Version](https://img.shields.io/github/v/release/GameFrameX/com.gameframex.unity.gameanalytics.grafanaloki)](https://github.com/GameFrameX/com.gameframex.unity.gameanalytics.grafanaloki/releases)
+[![Documentation](https://img.shields.io/badge/Documentation-docs-blue)](https://gameframex.doc.alianblank.com)
 
-  [文档](https://gameframex.doc.alianblank.com) | [快速开始](#快速开始)
+独立游戏前后端一体化解决方案 · 独立游戏开发者的圆梦大使
 
-  [English](README.md) | **简体中文** | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
+<br />
+
+[文档](https://gameframex.doc.alianblank.com) · [快速开始](#快速开始) · [QQ群](https://qm.qq.com/q/5U9Fvebw)
+
+<br />
+
+[English](README.md) | **简体中文** | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
+
 </div>
-
----
-
 ## 项目简介
 
 这个包提供了基于 Grafana Loki 的日志打点系统，实现了 GameFrameX.GameAnalytics 接口。它使游戏开发者能够将分析事件发送到 Grafana Loki，实现集中式日志管理和可视化。

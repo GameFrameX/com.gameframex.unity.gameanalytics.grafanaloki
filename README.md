@@ -1,21 +1,24 @@
 <div align="center">
-  <img src="https://download.alianblank.com/gameframex/gameframex_logo_320.png" alt="GameFrameX Logo" width="160" />
 
-  # GameFrameX GameAnalytics Grafana Loki
+<img src="https://download.alianblank.com/gameframex/gameframex_logo_320.png" alt="Game Frame X Logo" width="160" />
 
-  [![Version](https://img.shields.io/github/v/release/GameFrameX/com.gameframex.unity.gameanalytics.grafanaloki)](https://github.com/GameFrameX/com.gameframex.unity.gameanalytics.grafanaloki/releases)
-  [![License](https://img.shields.io/badge/license-MIT-orange.svg)](LICENSE.md)
-  [![Documentation](https://img.shields.io/badge/docs-gameframex-blue.svg)](https://gameframex.doc.alianblank.com)
+# GameFrameX GameAnalytics Grafana Loki
 
-  All-in-One Solution for Indie Game Development · Empowering Indie Developers' Dreams
+[![License](https://img.shields.io/github/license/GameFrameX/com.gameframex.unity.gameanalytics.grafanaloki)](https://github.com/GameFrameX/com.gameframex.unity.gameanalytics.grafanaloki/blob/main/LICENSE.md)
+[![Version](https://img.shields.io/github/v/release/GameFrameX/com.gameframex.unity.gameanalytics.grafanaloki)](https://github.com/GameFrameX/com.gameframex.unity.gameanalytics.grafanaloki/releases)
+[![Documentation](https://img.shields.io/badge/Documentation-docs-blue)](https://gameframex.doc.alianblank.com)
 
-  [Documentation](https://gameframex.doc.alianblank.com) | [Quick Start](#quick-start)
+All-in-One Solution for Indie Game Development · Empowering Indie Developers' Dreams
 
-  **English** | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
+<br />
+
+[Documentation](https://gameframex.doc.alianblank.com) · [Quick Start](#quick-start) · [QQ Group](https://qm.qq.com/q/5U9Fvebw)
+
+<br />
+
+**English** | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
+
 </div>
-
----
-
 ## Project Overview
 
 This package provides a Grafana Loki-based log analytics system that implements the GameFrameX.GameAnalytics interface. It enables game developers to send analytics events to Grafana Loki for centralized log management and visualization.

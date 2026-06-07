@@ -1,21 +1,24 @@
 <div align="center">
-  <img src="https://download.alianblank.com/gameframex/gameframex_logo_320.png" alt="GameFrameX Logo" width="160" />
 
-  # GameFrameX GameAnalytics Grafana Loki
+<img src="https://download.alianblank.com/gameframex/gameframex_logo_320.png" alt="Game Frame X Logo" width="160" />
 
-  [![Version](https://img.shields.io/github/v/release/GameFrameX/com.gameframex.unity.gameanalytics.grafanaloki)](https://github.com/GameFrameX/com.gameframex.unity.gameanalytics.grafanaloki/releases)
-  [![License](https://img.shields.io/badge/license-MIT-orange.svg)](LICENSE.md)
-  [![Documentation](https://img.shields.io/badge/docs-gameframex-blue.svg)](https://gameframex.doc.alianblank.com)
+# GameFrameX GameAnalytics Grafana Loki
 
-  インディゲーム開発者向けオールインワンソリューション · インディ開発者の夢を支援
+[![License](https://img.shields.io/github/license/GameFrameX/com.gameframex.unity.gameanalytics.grafanaloki)](https://github.com/GameFrameX/com.gameframex.unity.gameanalytics.grafanaloki/blob/main/LICENSE.md)
+[![Version](https://img.shields.io/github/v/release/GameFrameX/com.gameframex.unity.gameanalytics.grafanaloki)](https://github.com/GameFrameX/com.gameframex.unity.gameanalytics.grafanaloki/releases)
+[![Documentation](https://img.shields.io/badge/Documentation-docs-blue)](https://gameframex.doc.alianblank.com)
 
-  [ドキュメント](https://gameframex.doc.alianblank.com) | [クイックスタート](#クイックスタート)
+インディゲーム開発者向けオールインワンソリューション · インディ開発者の夢を支援
 
-  [English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | **日本語** | [한국어](README.ko.md)
+<br />
+
+[ドキュメント](https://gameframex.doc.alianblank.com) · [クイックスタート](#クイックスタート) · [QQグループ](https://qm.qq.com/q/5U9Fvebw)
+
+<br />
+
+[English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | **日本語** | [한국어](README.ko.md)
+
 </div>
-
----
-
 ## プロジェクト概要
 
 このパッケージは、Grafana Loki ベースのログアナリティクスシステムを提供し、GameFrameX.GameAnalytics インターフェースを実装しています。ゲーム開発者がアナリティクスイベントを Grafana Loki に送信し、一元化されたログ管理と可視化を実現できます。

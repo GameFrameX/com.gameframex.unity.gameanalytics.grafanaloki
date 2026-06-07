@@ -1,21 +1,24 @@
 <div align="center">
-  <img src="https://download.alianblank.com/gameframex/gameframex_logo_320.png" alt="GameFrameX Logo" width="160" />
 
-  # GameFrameX GameAnalytics Grafana Loki
+<img src="https://download.alianblank.com/gameframex/gameframex_logo_320.png" alt="Game Frame X Logo" width="160" />
 
-  [![Version](https://img.shields.io/github/v/release/GameFrameX/com.gameframex.unity.gameanalytics.grafanaloki)](https://github.com/GameFrameX/com.gameframex.unity.gameanalytics.grafanaloki/releases)
-  [![License](https://img.shields.io/badge/license-MIT-orange.svg)](LICENSE.md)
-  [![Documentation](https://img.shields.io/badge/docs-gameframex-blue.svg)](https://gameframex.doc.alianblank.com)
+# GameFrameX GameAnalytics Grafana Loki
 
-  인디 게임 개발자를 위한 올인원 솔루션 · 인디 개발자의 꿈을 실현
+[![License](https://img.shields.io/github/license/GameFrameX/com.gameframex.unity.gameanalytics.grafanaloki)](https://github.com/GameFrameX/com.gameframex.unity.gameanalytics.grafanaloki/blob/main/LICENSE.md)
+[![Version](https://img.shields.io/github/v/release/GameFrameX/com.gameframex.unity.gameanalytics.grafanaloki)](https://github.com/GameFrameX/com.gameframex.unity.gameanalytics.grafanaloki/releases)
+[![Documentation](https://img.shields.io/badge/Documentation-docs-blue)](https://gameframex.doc.alianblank.com)
 
-  [문서](https://gameframex.doc.alianblank.com) | [빠른 시작](#빠른-시작)
+인디 게임 개발자를 위한 올인원 솔루션 · 인디 개발자의 꿈을 실현
 
-  [English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | **한국어**
+<br />
+
+[문서](https://gameframex.doc.alianblank.com) · [빠른 시작](#빠른-시작) · [QQ 그룹](https://qm.qq.com/q/5U9Fvebw)
+
+<br />
+
+[English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | **한국어**
+
 </div>
-
----
-
 ## 프로젝트 개요
 
 이 패키지는 Grafana Loki 기반 로그 분석 시스템을 제공하며, GameFrameX.GameAnalytics 인터페이스를 구현합니다. 게임 개발자가 분석 이벤트를 Grafana Loki로 전송하여 중앙 집중식 로그 관리와 시각화를 실현할 수 있습니다.
