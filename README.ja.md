@@ -50,9 +50,9 @@ openupm add com.gilzoide.sqlite-net
   "scopedRegistries": [
     {
       "name": "OpenUPM",
-      "url": "https://package.openupm.com",
+      "url": "https://gameframex.upm.alianblank.uk",
       "scopes": [
-        "com.gilzoide"
+        "com.gameframex"
       ]
     }
   ],

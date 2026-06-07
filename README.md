@@ -50,9 +50,9 @@ Or add the following scope and dependency in `Packages/manifest.json`:
   "scopedRegistries": [
     {
       "name": "OpenUPM",
-      "url": "https://package.openupm.com",
+      "url": "https://gameframex.upm.alianblank.uk",
       "scopes": [
-        "com.gilzoide"
+        "com.gameframex"
       ]
     }
   ],
