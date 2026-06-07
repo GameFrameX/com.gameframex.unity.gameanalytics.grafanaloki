@@ -20,6 +20,7 @@
 [English](README.md) | [简体中文](README.zh-CN.md) | **繁體中文** | [日本語](README.ja.md) | [한국어](README.ko.md)
 
 </div>
+
 ## 項目簡介
 
 這個包提供了基於 Grafana Loki 的日誌打點系統，實現了 GameFrameX.GameAnalytics 介面。它使遊戲開發者能夠將分析事件傳送到 Grafana Loki，實現集中式日誌管理和視覺化。
