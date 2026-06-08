@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/gameframex/com.gameframex.unity.gameanalytics.grafanaloki/compare/1.0.1...1.0.2) (2026-06-08)
+
+
+### Bug Fixes
+
+* 补全包规范文件（LICENSE/CHANGELOG/URL 字段/unity 字段） ([9bef45d](https://github.com/gameframex/com.gameframex.unity.gameanalytics.grafanaloki/commit/9bef45d13ee5eb293160ee83e346c0be4a76ba3f))
+
 ## [1.0.1](https://github.com/gameframex/com.gameframex.unity.gameanalytics.grafanaloki/compare/1.0.0...1.0.1) (2026-01-29)
 
 
